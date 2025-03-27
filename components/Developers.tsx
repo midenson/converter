@@ -27,11 +27,11 @@ export function Developers() {
           </DialogDescription> */}
         </DialogHeader>
         <div className="flex justify-between items-center">
-            <DevCard name="Olatunji Naheem" matric="" className="bg-green-400" />
-            <DevCard name="Olatunji Naheem" matric="" className="bg-red-400"/>
+            <DevCard name="Olatunji Naheem" matric="" className="bg-black dark:bg-amber-100 text-white dark:text-black" />
+            <DevCard name="Olatunji Naheem" matric="" className="bg-black dark:bg-amber-100 text-white dark:text-black"/>
         </div>
         <div>
-            <DevCard name="Olatunji Naheem" matric="" className="bg-amber-300"/>
+            <DevCard name="Olatunji Naheem" matric="" className="bg-black dark:bg-amber-100 text-white dark:text-black" />
         </div>
       </DialogContent>
     </Dialog>
