@@ -10,18 +10,21 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 
-export function SelectBase() {
+type baseProps = {
+  base: string
+}
+export function SelectBase({base}: baseProps) {
   return (
-    <Select>
+    <Select value={base}>
       <SelectTrigger className="w-[180px]">
         <SelectValue placeholder="Select a base" />
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>
           <SelectLabel>Number bases</SelectLabel>
-          <SelectItem value="apple">binary</SelectItem>
-          <SelectItem value="banana">octal</SelectItem>
-          <SelectItem value="blueberry">hexadecimal</SelectItem>
+          <SelectItem value="binary">binary</SelectItem>
+          <SelectItem value="octal">octal</SelectItem>
+          <SelectItem value="hexadecimal">hexadecimal</SelectItem>
         </SelectGroup>
       </SelectContent>
     </Select>

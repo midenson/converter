@@ -32,7 +32,7 @@ export default function Results({base, value, className}: numberProps) {
   return (
     <Card className={`w-[230px] h-72 ${className}`}>
       <CardHeader>
-        <CardTitle className={`${geistMono.className} text-xl`}>{base}</CardTitle>
+        <CardTitle className={`${geistMono.className} md:text-xl`}>{base}</CardTitle>
       </CardHeader>
       <CardContent className="">
         <div className="w-20 h-16 text-3xl">

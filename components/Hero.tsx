@@ -6,7 +6,7 @@ import { Developers } from './Developers'
 
 const Hero = () => {
   return (
-    <div className='flex justify-center items-center w-screen h-[150px]'>
+    <div className='flex justify-center items-center w-screen h-[150px] mt-10'>
         <div className='w-11/12'>
             <div className='flex flex-col gap-4'>
                 <div>
