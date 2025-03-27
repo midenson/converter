@@ -19,7 +19,7 @@ function SheetTrigger({
 function SheetClose({
   ...props
 }: React.ComponentProps<typeof SheetPrimitive.Close>) {
-  return <SheetPrimitive.Close data-slot="sheet-close" {...props} />
+  return <SheetPrimitive.Close className="" data-slot="sheet-close" {...props} />
 }
 
 function SheetPortal({
