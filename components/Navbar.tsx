@@ -1,8 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import React from 'react'
-import { geistMono } from '@/customfonts'
-import { MobileNav } from './MobileNav'
+import { ModeToggle } from './Toggle'
 
 const Navbar = () => {
   return (
@@ -14,7 +13,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className=''>
-            <MobileNav />
+            <ModeToggle />
           </div>
         </div>
     </nav>

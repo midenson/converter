@@ -33,7 +33,7 @@ export function DevCard({name, matric, className}: developerProp) {
         <CardTitle className={`${geistMono.className}`}>{name}</CardTitle>
       </CardHeader>
       <CardContent>
-        
+        <p className={`${geistMono.className}`}>{matric}</p>
       </CardContent>
     </Card>
   )
