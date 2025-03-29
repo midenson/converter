@@ -128,7 +128,7 @@ const Converter = () => {
           {/* Results for converted number */}
           <Results 
             className='bg-green-600 w-[150px] h-48 md:w-[230px] md:h-72' 
-            base={baseNames[toBase || '2']} 
+            base={baseNames[toBase as keyof typeof baseNames] || baseNames['2']} 
             value={convertBase(input, fromBase, toBase)} 
           />
           <Results 
