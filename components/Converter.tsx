@@ -124,20 +124,20 @@ const Converter = () => {
             </SelectContent>
           </Select>
         </div>
-        <div className='w-full md:w-1/2 h-full flex justify-between items-center md:gap-6'>
+        <div className='w-full md:w-1/2 h-full flex justify-between items-center gap-1.5 md:gap-6'>
           {/* Results for converted number */}
           <Results 
-            className='bg-green-600 w-[150px] h-48 md:w-[230px] md:h-72' 
+            className='bg-green-600 w-[120px] h-48 md:w-[230px] md:h-72' 
             base={baseNames[toBase as keyof typeof baseNames] || baseNames['2']} 
             value={convertBase(input, fromBase, toBase)} 
           />
           <Results 
-            className='bg-amber-400 w-[150px] h-48 md:w-[230px] md:h-72 mt-10' 
+            className='bg-amber-400 w-[120px] h-48 md:w-[230px] md:h-72 mt-10' 
             base={baseNames['8']} 
             value={convertBase(input, fromBase, '8')} 
           />
             <Results 
-              className='bg-red-400 w-[150px] h-48 md:w-[230px] md:h-72 text-sm' 
+              className='bg-red-400 w-[120px] h-48 md:w-[230px] md:h-72 text-sm' 
               base={baseNames['16']} 
               value={convertBase(input, fromBase, '16')} 
             />
